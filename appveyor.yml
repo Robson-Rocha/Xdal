@@ -6,3 +6,12 @@ environment:
 build_script:
 - cmd: >-
     dotnet build src\lib\Xdal.Abstractions\Xdal.Abstractions.csproj
+
+    dotnet build src\lib\Xdal.EntityFrameworkCore\Xdal.EntityFrameworkCore.csproj
+
+    dotnet build src\lib\Xdal.EntityFrameworkCore.InMemory\Xdal.EntityFrameworkCore.InMemory.csproj
+
+    dotnet build src\lib\Xdal.EntityFrameworkCore.SQLite\Xdal.EntityFrameworkCore.Sqlite.csproj
+
+    dotnet build src\lib\Xdal.EntityFrameworkCore.SqlServer\Xdal.EntityFrameworkCore.SqlServer.csproj
+

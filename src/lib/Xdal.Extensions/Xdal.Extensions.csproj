@@ -1,10 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Authors>RobsonROX</Authors>
-    <Product>Xdal.Abstractions</Product>
-    <Description>Small and simple Data Access Layer/Library/Repositories abstractions</Description>
+    <Product>Xdal.Extensions</Product>
+    <Description>Extension methods for Xdal</Description>
     <PackageIconUrl>https://github.com/Robson-Rocha/Xdal/raw/master/docs/xdal-nuget.png</PackageIconUrl>
     <RepositoryUrl></RepositoryUrl>
     <PackageProjectUrl>https://github.com/robson-rocha/xdal</PackageProjectUrl>
@@ -16,4 +17,9 @@
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <Version>1.0.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xdal.Abstractions" Version="1.0.0" />
+    <!-- <ProjectReference Include="..\Xdal.Abstractions\Xdal.Abstractions.csproj" /> -->
+  </ItemGroup>
 </Project>

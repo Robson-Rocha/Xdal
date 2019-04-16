@@ -1,19 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Authors>RobsonROX</Authors>
-    <Product>Xdal.Abstractions</Product>
-    <Description>Small and simple Data Access Layer/Library/Repositories abstractions</Description>
+    <Product>Xdal.EntityFrameworkCore.Sqlite</Product>
+    <Description>Small and simple Data Access Layer/Library/Repositories for Entity Framework Core using SQLite Provider</Description>
     <PackageIconUrl>https://github.com/Robson-Rocha/Xdal/raw/master/docs/xdal-nuget.png</PackageIconUrl>
     <RepositoryUrl></RepositoryUrl>
     <PackageProjectUrl>https://github.com/robson-rocha/xdal</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright ©2019 Robson Rocha de Araújo</Copyright>
     <PackageLicenseUrl>https://github.com/Robson-Rocha/Xdal/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageTags>xdal, data access library, data access layer, data repository</PackageTags>
+    <PackageTags>xdal, data access library, data access layer, data repository, ef, entity framework core, entity, framework, core, sqlite</PackageTags>
     <Company>Robson Rocha de Araújo</Company>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <Version>1.0.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.4" />
+    <PackageReference Include="Xdal.EntityFrameworkCore" Version="1.0.0" />
+    <!-- <ProjectReference Include="..\Xdal.EntityFrameworkCore\Xdal.EntityFrameworkCore.csproj" /> -->
+  </ItemGroup>
+
 </Project>

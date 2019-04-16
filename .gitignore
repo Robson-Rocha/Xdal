@@ -12,6 +12,9 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+nuget.config
+sonar.bat
+.sonarqube
 
 # Build results
 [Dd]ebug/

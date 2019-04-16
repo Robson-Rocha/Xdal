@@ -23,7 +23,7 @@ namespace Xdal
     /// <summary>
     /// Represents the minimum set of members that composes an entity.
     /// </summary>
-    public interface IEntity : IEntity<long>, IEntityBase
+    public interface IEntity : IEntity<long>
     {
     }
 
