@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- <PackageReference Include="Xdal.Abstractions" Version="1.0.0" /> -->
-    <ProjectReference Include="..\Xdal.Abstractions\Xdal.Abstractions.csproj" />
+    <PackageReference Include="Xdal.Abstractions" Version="1.0.0" />
+    <!-- <ProjectReference Include="..\Xdal.Abstractions\Xdal.Abstractions.csproj" /> -->
   </ItemGroup>
 </Project>
