@@ -5,4 +5,4 @@ environment:
   DOTNET_CLI_TELEMETRY_OPTOUT: true
 build_script:
 - cmd: >-
-    dotnet build src\lib\Xdal.Abstractions.csproj
+    dotnet build src\lib\Xdal.Abstractions\Xdal.Abstractions.csproj
