@@ -32,8 +32,8 @@ namespace Xdal
         /// <summary>
         /// Updates the provided set of instances of <c>TEntity</c> in the <see cref="IUnitOfWork"/>.
         /// </summary>
-        /// <param name="entity">The set containing the instances of <c>TEntity</c> to be updated.</param>
-        void Update(IEnumerable<TEntity> entity);
+        /// <param name="entities">The set containing the instances of <c>TEntity</c> to be updated.</param>
+        void Update(IEnumerable<TEntity> entities);
 
         /// <summary>
         /// Deletes the provided instance of <c>TEntity</c> from the <see cref="IUnitOfWork"/>.
@@ -50,8 +50,8 @@ namespace Xdal
         /// <summary>
         /// Delete the provided set of instances of <c>TEntity</c> from the <see cref="IUnitOfWork"/>.
         /// </summary>
-        /// <param name="entity">The set containing the instances of <c>TEntity</c> to be deleted.</param>
-        void Delete(IEnumerable<TEntity> entity);
+        /// <param name="entities">The set containing the instances of <c>TEntity</c> to be deleted.</param>
+        void Delete(IEnumerable<TEntity> entities);
 
 
         /// <summary>

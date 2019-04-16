@@ -18,7 +18,7 @@ namespace Xdal.EntityFrameworkCore
         private readonly DbSet<TEntity> _set;
 
         /// <inheritdoc />
-        protected internal EfRepository(EfUnitOfWork unitOfWork)
+        protected EfRepository(EfUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
             _set = DbContext.Set<TEntity>();
@@ -149,7 +149,7 @@ namespace Xdal.EntityFrameworkCore
         where TEntity : class, IEntity
     {
         /// <inheritdoc />
-        protected internal EfRepository(EfUnitOfWork unitOfWork)
+        protected EfRepository(EfUnitOfWork unitOfWork)
             : base(unitOfWork)
         { }
 
