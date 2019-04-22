@@ -45,7 +45,7 @@ namespace Xdal
         /// Finds and deletes the entity identified with the provided Id from the <see cref="IUnitOfWork"/>.
         /// </summary>
         /// <param name="id">The id of the entity to be deleted.</param>
-        void Delete(long id);
+        void Delete(TKey id);
 
         /// <summary>
         /// Delete the provided set of instances of <c>TEntity</c> from the <see cref="IUnitOfWork"/>.
@@ -58,7 +58,7 @@ namespace Xdal
         /// Finds and deletes entities identified by the provided set of Ids of <c>TEntity</c> from the <see cref="IUnitOfWork"/>.
         /// </summary>
         /// <param name="ids">The set containing the ids of the entities to be deleted.</param>
-        void Delete(IEnumerable<long> ids);
+        void Delete(IEnumerable<TKey> ids);
     }
 
     /// <summary>

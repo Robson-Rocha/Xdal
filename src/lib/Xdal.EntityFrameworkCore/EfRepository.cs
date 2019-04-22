@@ -104,7 +104,7 @@ namespace Xdal.EntityFrameworkCore
             => _set.Remove(entity);
 
         /// <inheritdoc />
-        public virtual void Delete(long id)
+        public virtual void Delete(TKey id)
         {
             TEntity entity =_set.Find(id);
             if (entity != null)
@@ -116,7 +116,7 @@ namespace Xdal.EntityFrameworkCore
             => _set.RemoveRange(entities);
 
         /// <inheritdoc />
-        public virtual void Delete(IEnumerable<long> ids)
+        public virtual void Delete(IEnumerable<TKey> ids)
         {
             foreach (var id in ids)
                 Delete(id);

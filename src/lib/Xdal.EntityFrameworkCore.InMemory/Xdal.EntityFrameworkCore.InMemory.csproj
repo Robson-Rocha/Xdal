@@ -14,13 +14,13 @@
     <PackageLicenseUrl>https://github.com/Robson-Rocha/Xdal/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>xdal, data access library, data access layer, data repository, ef, entity framework core, entity, framework, core, in memory</PackageTags>
     <Company>Robson Rocha de Araújo</Company>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.4" />
-    <PackageReference Include="Xdal.EntityFrameworkCore" Version="1.0.0" />
+    <PackageReference Include="Xdal.EntityFrameworkCore" Version="1.0.1" />
     <!-- <ProjectReference Include="..\Xdal.EntityFrameworkCore\Xdal.EntityFrameworkCore.csproj" /> -->
   </ItemGroup>
 
