@@ -13,7 +13,7 @@
     <PackageLicenseUrl>https://github.com/Robson-Rocha/Xdal/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>xdal, data access library, data access layer, data repository</PackageTags>
     <Company>Robson Rocha de Araújo</Company>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 </Project>

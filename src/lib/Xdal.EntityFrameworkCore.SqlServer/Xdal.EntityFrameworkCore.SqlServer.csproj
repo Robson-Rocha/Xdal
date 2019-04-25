@@ -14,13 +14,13 @@
     <PackageLicenseUrl>https://github.com/Robson-Rocha/Xdal/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>xdal, data access library, data access layer, data repository, ef, entity framework core, entity, framework, core, sql server</PackageTags>
     <Company>Robson Rocha de Araújo</Company>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
-    <PackageReference Include="Xdal.EntityFrameworkCore" Version="1.0.1" />
+    <PackageReference Include="Xdal.EntityFrameworkCore" Version="1.1.0" />
     <!-- <ProjectReference Include="..\Xdal.EntityFrameworkCore\Xdal.EntityFrameworkCore.csproj" /> -->
   </ItemGroup>
 </Project>

@@ -113,6 +113,38 @@ namespace Xdal
         /// <param name="query">A lambda expression which should produce the <see cref="IQueryable{TResult}"/> to be executed against this <see cref="IRepository{TEntity}"/>.</param>
         /// <returns>An instance of <see><cref>Task{TResult[]}</cref></see> which should return the results array.</returns>
         Task<TResult[]> GetArrayAsync<TResult>(Func<IQueryable<TEntity>, IQueryable<TResult>> query);
+
+        /// <summary>
+        /// Executes the provided <see cref="IQueryable{TResult}"/> against this <see cref="IRepository{TEntity}"/>, and return if it can fetch any results.
+        /// </summary>
+        /// <param name="query">The <see cref="IQueryable{TResult}"/> to be executed against this <see cref="IRepository{TEntity}"/>.</param>
+        /// <typeparam name="TResult">The type of the results the query should produce.</typeparam>
+        /// <returns>A <see cref="bool"/> indicating if any result matches the provided query.</returns>
+        bool Exists<TResult>(IQueryable<TResult> query);
+
+        /// <summary>
+        /// Executes the provided lambda expression, passing an <see cref="IQueryable{TEntity}"/> equivalent to the <see cref="All"/> property, then executes the <see cref="IQueryable{TResult}"/> against this <see cref="IRepository{TEntity}"/>, and return the results<see cref="IQueryable{TResult}"/> returned by the lambda expression against this <see cref="IRepository{TEntity}"/>, and return if it can fetch any results.
+        /// </summary>
+        /// <param name="query">A lambda expression which should produce the <see cref="IQueryable{TResult}"/> to be executed against this <see cref="IRepository{TEntity}"/>.</param>
+        /// <typeparam name="TResult">The type of the results the query should produce.</typeparam>
+        /// <returns>A <see cref="bool"/> indicating if any result matches the provided query.</returns>
+        bool Exists<TResult>(Func<IQueryable<TEntity>, IQueryable<TResult>> query);
+
+        /// <summary>
+        /// Executes asynchronously the provided <see cref="IQueryable{TResult}"/> against this <see cref="IRepository{TEntity}"/>, and return if it can fetch any results.
+        /// </summary>
+        /// <param name="query">The <see cref="IQueryable{TResult}"/> to be executed against this <see cref="IRepository{TEntity}"/>.</param>
+        /// <typeparam name="TResult">The type of the results the query should produce.</typeparam>
+        /// <returns>A <see><cref>Task{bool}</cref></see> which shall indicate if any result matches the provided query.</returns>
+        Task<bool> ExistsAsync<TResult>(IQueryable<TResult> query);
+
+        /// <summary>
+        /// Executes asynchronously the provided lambda expression, passing an <see cref="IQueryable{TEntity}"/> equivalent to the <see cref="All"/> property, then executes the <see cref="IQueryable{TResult}"/> against this <see cref="IRepository{TEntity}"/>, and return the results<see cref="IQueryable{TResult}"/> returned by the lambda expression against this <see cref="IRepository{TEntity}"/>, and return if it can fetch any results.
+        /// </summary>
+        /// <param name="query">A lambda expression which should produce the <see cref="IQueryable{TResult}"/> to be executed against this <see cref="IRepository{TEntity}"/>.</param>
+        /// <typeparam name="TResult">The type of the results the query should produce.</typeparam>
+        /// <returns>A <see><cref>Task{bool}</cref></see> which shall indicate if any result matches the provided query.</returns>
+        Task<bool> ExistsAsync<TResult>(Func<IQueryable<TEntity>, IQueryable<TResult>> query);
     }
 
     /// <summary>

@@ -76,6 +76,22 @@ namespace Xdal.EntityFrameworkCore
             => await All.FirstOrDefaultAsync(e => e.Id.Equals(id));
 
         /// <inheritdoc />
+        public virtual bool Exists<TResult>(IQueryable<TResult> query)
+            => query.Any();
+
+        /// <inheritdoc />
+        public virtual bool Exists<TResult>(Func<IQueryable<TEntity>, IQueryable<TResult>> query)
+            => Exists(query(All));
+
+        /// <inheritdoc />
+        public virtual async Task<bool> ExistsAsync<TResult>(IQueryable<TResult> query)
+            => await query.AnyAsync();
+
+        /// <inheritdoc />
+        public virtual async Task<bool> ExistsAsync<TResult>(Func<IQueryable<TEntity>, IQueryable<TResult>> query)
+            => await ExistsAsync(query(All));
+
+        /// <inheritdoc />
         public virtual async Task<TResult> GetAsync<TResult>(IQueryable<TResult> query)
             => await query.FirstOrDefaultAsync();
 
